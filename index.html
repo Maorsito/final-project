@@ -6,23 +6,42 @@
     <style>
       body {
         margin-bottom: 120px;
+        margin: 0;
+        font-family:'Trebuchet MS';
       }
       .container {
         position: relative;
       }
       nav {
         box-sizing: border-box;
-        border: 3px solid red;
+        border: 3px solid lightgray;
+        background-color:lightgray;
         left: 0px;
-        position: absolute;
+        position: fixed;
+        /* bottom: 0; */
         width: 200px;
+        z-index: 5;
       }
       section {
         box-sizing: border-box;
-        border: 3px solid orange;
+        background-color:whitesmoke;
+        border: 3px solid lightgray;
         /* position is static by default */
         margin-left: 200px;
         margin-bottom: 10px;
+        padding-left:40px;
+        padding-right: 40px;
+        position: relative;
+
+      }
+      .maor {
+        height: 50px;
+      width:50px;
+      background-color:lightgreen;
+      position: absolute; 
+      bottom:0;
+      left:0;
+
       }
       footer {
         background-color: white;
@@ -33,6 +52,7 @@
         height: 70px;
         position: fixed;
         text-align: center;
+        padding:20px;
         width: 100%;
       }
     </style>
@@ -49,8 +69,11 @@
           <li><a href="">Contact</a></li>
         </ul>
       </nav>
+
       <section>
         <h1>My First Heading</h1>
+        <div class="maor">
+        </div>
         <p>
           Maecenas faucibus mollis interdum. Aenean eu leo quam. Pellentesque
           ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh
@@ -69,6 +92,50 @@
           semper. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
         </p>
       </section>
+      <section>
+          <h2>Second Section</h2>
+          <p>
+            Nulla vitae elit libero, a pharetra augue. Praesent commodo cursus
+            magna, vel scelerisque nisl consectetur et. Nullam quis risus eget
+            urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis
+            dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum
+            nulla sed consectetur. Vestibulum id ligula porta felis euismod
+            semper. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
+          </p>
+        </section>
+        <section>
+            <h2>Second Section</h2>
+            <p>
+              Nulla vitae elit libero, a pharetra augue. Praesent commodo cursus
+              magna, vel scelerisque nisl consectetur et. Nullam quis risus eget
+              urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis
+              dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum
+              nulla sed consectetur. Vestibulum id ligula porta felis euismod
+              semper. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
+            </p>
+          </section>
+          <section>
+              <h2>Second Section</h2>
+              <p>
+                Nulla vitae elit libero, a pharetra augue. Praesent commodo cursus
+                magna, vel scelerisque nisl consectetur et. Nullam quis risus eget
+                urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis
+                dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum
+                nulla sed consectetur. Vestibulum id ligula porta felis euismod
+                semper. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
+              </p>
+            </section>
+            <section>
+                <h2>Second Section</h2>
+                <p>
+                  Nulla vitae elit libero, a pharetra augue. Praesent commodo cursus
+                  magna, vel scelerisque nisl consectetur et. Nullam quis risus eget
+                  urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis
+                  dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum
+                  nulla sed consectetur. Vestibulum id ligula porta felis euismod
+                  semper. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
+                </p>
+              </section>
       <section>
         <p>
           Notice what happens when you resize your browser. It works nicely!
