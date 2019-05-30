@@ -16,14 +16,13 @@
     </p>
 
     <input class="name_field" type="text" />
+    <input class="name_field" type="text" />
+
 
     <button class="presto">Abra Cadabra!</button>
 
     <script type="text/javascript">
-      let myVariable = "Hello World!";
-
-      // alert(myVariable);
-
+ 
       window.onload = function() {
         // do something when the page loads
         // alert("welcome");
@@ -53,6 +52,15 @@
       //     alert("That sounds pretty good too, I guess.");
       //   }
       // }
+
+      let btn = document.querySelector(".presto");
+      btn.onclick = function() {
+        let form = document.querySelector(".name_field");
+        let form_input = form.value;
+        condFunc(form_input);
+      };
+      console.log('');
+      
 
       function myFunc(input) {
         let message = input + " duh!";
