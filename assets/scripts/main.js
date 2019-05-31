@@ -3,7 +3,11 @@ function showMessage() {
   console.log("message button clicked");
 
   overlay.classList.add("show");
+  overlay.classList.add("newstyle");
+  overlay.classList.add("mel");
+
 }
+
 
 function hideOverlay() {
   let overlay = document.querySelector("#overlay");

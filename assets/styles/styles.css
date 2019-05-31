@@ -77,10 +77,13 @@ header ul li a {
   color: black;
   font-size: 15px;
   text-decoration: none;
+  opacity: 1;
+  transition: opacity 0.3s ease color 0.3s ease;
 }
 
 header ul li a:hover {
-  text-decoration: underline;
+  opacity: 0.3;
+  color: red;
 }
 
 header .cart {
@@ -225,6 +228,13 @@ p {
 
 #overlay.show {
   display: block;
+}
+
+#overlay.newstyle h1 {
+color: rgb(255, 255, 255);
+}
+#overlay.mel h1 {
+background-color: rgb(96, 40, 252)
 }
 
 #messageBox {
